@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "api/ingest.js": {
-      "runtime": "@vercel/node@18.x"
-    }
-  }
-}
