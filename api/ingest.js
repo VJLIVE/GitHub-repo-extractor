@@ -1,7 +1,7 @@
 const axios = require("axios");
 const AdmZip = require("adm-zip");
 
-const MAX_FILES = 2000;
+const MAX_FILES = 80;
 
 const IGNORE_PATTERNS = [
   "node_modules",
@@ -16,7 +16,7 @@ const IGNORE_PATTERNS = [
   ".claude-plugin"
 ];
 
-const ALLOWED_EXTENSIONS = /\.(js|ts|tsx|py|java|go|md)$/;
+const ALLOWED_EXTENSIONS = /\.(js|ts|tsx|py|java|go)$/;
 
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
