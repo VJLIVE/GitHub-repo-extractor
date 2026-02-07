@@ -1,7 +1,6 @@
 {
   "name": "github-extractor",
   "version": "1.0.0",
-  "type": "module",
   "dependencies": {
     "adm-zip": "^0.5.16",
     "axios": "^1.13.4"

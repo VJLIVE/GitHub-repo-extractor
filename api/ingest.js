@@ -1,5 +1,5 @@
-import axios from "axios";
-import AdmZip from "adm-zip";
+const axios = require("axios");
+const AdmZip = require("adm-zip");
 
 const MAX_FILES = 2000;
 
@@ -18,7 +18,7 @@ const IGNORE_PATTERNS = [
 
 const ALLOWED_EXTENSIONS = /\.(js|ts|tsx|py|java|go|md)$/;
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
